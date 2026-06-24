@@ -1,0 +1,91 @@
+# awesome-agent-clients — Design / Spec
+
+**Date:** 2026-06-24
+**Status:** Approved direction (platform-based), research-informed v1.
+
+## Purpose
+
+A curated GitHub "awesome list" of **AI coding-agent clients and orchestrators** — the
+GUI / CLI / TUI / mobile / web / IDE apps that **wrap, run, manage, or orchestrate** coding
+agents (Claude Code, OpenAI Codex, Gemini CLI, OpenCode, Aider, Cursor CLI, Amp, etc.).
+
+The coding agents themselves are **out of scope** as primary entries; they appear only in a
+"Related" section as the things being managed.
+
+## Scope rules (inclusion criteria)
+
+A tool is **in scope** if it:
+
+1. Wraps / runs / manages / orchestrates one or more *external* coding agents, AND
+2. Is a real, reachable product (official site and/or public repo), AND
+3. Is not merely the agent itself, a fork/mirror of a listed tool, or a duplicate entry.
+
+Borderline handling:
+- Tools that are an agent **and** ship an orchestrator (e.g. Cline + its Kanban app) are kept,
+  pointing at the orchestrator component.
+- Tools with their own agent loop but fleet-management UX (e.g. Coder `mux`) are kept with a note.
+- Pure observability/session viewers (no agent control) are kept in a dedicated **companion** section,
+  clearly labelled.
+- General-purpose assistants / DAG frameworks / sandbox infrastructure (Goose, OpenClaw, FleetQ,
+  AgentTier, Hermes Agent) are **out of scope** → "Related".
+
+## Repository structure
+
+```
+awesome-agent-clients/
+├── README.md            # the list (badge, intro, scope, legend, TOC, entries)
+├── CONTRIBUTING.md      # inclusion criteria + entry format + PR steps
+├── CODE_OF_CONDUCT.md   # Contributor Covenant
+├── LICENSE              # CC0-1.0
+├── docs/
+│   └── awesome-agent-clients-design.md   # this file
+└── .github/
+    ├── PULL_REQUEST_TEMPLATE.md
+    └── ISSUE_TEMPLATE/
+        └── suggest-a-tool.md
+```
+
+## README section taxonomy (platform-based, the agreed primary axis)
+
+1. Desktop & multi-platform clients
+2. Terminal & CLI orchestrators (TUI + CLI-first)
+3. IDE & editor plugins (Neovim, JetBrains, Obsidian, …)
+4. Web & self-hosted dashboards
+5. Cloud & hosted control planes
+6. Session viewers & companion tools (observe, don't control)
+7. Archived / notable (historical reference)
+8. Related: agents, frameworks & protocols (managed agents, MCP, ACP)
+
+Each tool is listed in its single most-appropriate section. A compact metadata sub-line
+surfaces repo · license · platforms · supported agents · the one or two distinctive features —
+because, per the brief, the right way to record a tool depends on what it actually does.
+
+## Entry format
+
+```
+- [Name](best-url) — one neutral sentence (no marketing superlatives).
+  - `owner/repo` (or `closed-source`) · License · Platforms · Agents: … · *Distinctive:* …
+```
+
+## Provenance & data quality
+
+- Compiled from a multi-agent research workflow (June 2026): ~418 raw candidates → 210 unique
+  tools discovered; 49 deeply researched in round 1 + 24 in a gap-fill round (editor-embedded
+  + cloud/hosted). Every listed tool was confirmed to exist via an official site and/or repo.
+- The adversarial verification stage was largely rate-limited, so most entries are
+  **research-grade, not independently re-verified**. Star counts / versions / dates are
+  point-in-time and may be stale. The README carries a disclaimer; corrections via PR are expected.
+
+## Known pending items (verify before relying on them)
+
+- **Multica** (`multica-ai/multica`) — reported large-traction web+iOS orchestrator (MCP+ACP),
+  license NOASSERTION; metadata unverified → omitted from v1, candidate for inclusion.
+- **CliDeck** — appeared in discovery but lacked a verified entry → omitted from v1.
+- Excluded as too immature / confusing: `swmcc/agentic.nvim` (Pamoja, ~2★),
+  `sajithdilshan/agent-cli-plugin` (~0★), `craigsc/cmux` & `EtanHey/cmuxlayer` (name collision / niche).
+- ~160 discovered tools were never researched (round 1 capped at 50). Long-tail follow-up welcome.
+
+## Out of scope (recorded for reviewers)
+
+Goose, Hermes Desktop/Agent, OpenClaw (general assistants/agents); FleetQ (general DAG
+multi-agent platform); AgentTier (Kubernetes agent-sandbox infrastructure); ghast (cmux fork).
