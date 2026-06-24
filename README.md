@@ -4,7 +4,7 @@
 
 > A curated list of clients and orchestrators for AI coding agents — the desktop, terminal, mobile, web, and IDE apps that **run, manage, and orchestrate** agents like Claude Code, OpenAI Codex, Gemini CLI, OpenCode, Aider, and Cursor CLI.
 
-The last couple of years turned "AI coding agent" from a single chat box into a *fleet*. The tools below are the cockpits: they launch agents, isolate each one in its own git worktree or sandbox, review the diffs, and increasingly let you steer the whole thing from your phone. This list is about the **cockpits, not the agents** — the agents themselves live in [Related](#related-agents-frameworks--protocols).
+Over the last couple of years, working with AI coding agents went from chatting with one to running many in parallel. The tools below are where you run them: they launch agents, isolate each in its own git worktree or sandbox, review the diffs, and increasingly let you steer everything from your phone. This list is about **those tools, not the agents** — the agents themselves live in [Related](#related-agents-frameworks--protocols).
 
 ## Contents
 
