@@ -63,9 +63,23 @@ because, per the brief, the right way to record a tool depends on what it actual
 ## Entry format
 
 ```
-- [Name](best-url) — one neutral sentence (no marketing superlatives).
+- [Name](best-url) — one neutral sentence (no marketing superlatives). <emoji> [![★](shields.io stars badge)](repo/stargazers)
   - `owner/repo` (or `closed-source`) · License · Platforms · Agents: … · *Distinctive:* …
 ```
+
+Each entry carries a live shields.io GitHub-stars badge, and **entries are sorted by star
+count (descending) within each section** as a transparent adoption signal. Closed-source
+products have no badge.
+
+## Curation by adoption (star threshold)
+
+GitHub stars are used as a rough adoption proxy. Tools with **fewer than ~50 stars** are held
+back from the main list unless they are uniquely notable; genuinely novel tools can be added
+sooner. Star count is a signal, not a quality verdict.
+
+Two badge caveats are documented in the README: the **Cline (Kanban)** badge points at the
+orchestrator repo (the parent project is far larger), and the **Oz** badge counts the whole
+Warp client rather than Oz alone.
 
 ## Provenance & data quality
 
@@ -76,10 +90,23 @@ because, per the brief, the right way to record a tool depends on what it actual
   **research-grade, not independently re-verified**. Star counts / versions / dates are
   point-in-time and may be stale. The README carries a disclaimer; corrections via PR are expected.
 
-## Known pending items (verify before relying on them)
+## Star counts (read from GitHub API, 2026-06-24)
 
-- **Multica** (`multica-ai/multica`) — reported large-traction web+iOS orchestrator (MCP+ACP),
-  license NOASSERTION; metadata unverified → omitted from v1, candidate for inclusion.
+All listed repos had their `stargazers_count` read directly from the GitHub API during build,
+which also re-confirmed each repo exists. Notable: `multica-ai/multica` is real and large
+(~37.7k★) → promoted into the list (Web & self-hosted). Top of list: `cline/cline` (~64k),
+`warpdotdev/warp` (~62k), `BloopAI/vibe-kanban` (~27k), `manaflow-ai/cmux` (~23k),
+`winfunc/opcode` (~22k, but last push 2025-10).
+
+### Excluded for low adoption (< ~50 stars)
+
+Dropped from v1 (recorded here so reviewers know they were considered, not missed):
+
+- `rickywo/Formic` (~41★) · `codika-io/clave` (~31★) · `NikiforovAll/claude-code-kanban` (~30★) ·
+  `rayzhudev/vibecraft` (~26★) · `bdkent/clauditor` (~4★).
+
+## Known pending / earlier exclusions
+
 - **CliDeck** — appeared in discovery but lacked a verified entry → omitted from v1.
 - Excluded as too immature / confusing: `swmcc/agentic.nvim` (Pamoja, ~2★),
   `sajithdilshan/agent-cli-plugin` (~0★), `craigsc/cmux` & `EtanHey/cmuxlayer` (name collision / niche).

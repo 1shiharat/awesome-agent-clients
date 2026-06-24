@@ -30,9 +30,11 @@ not as primary entries):
 
 ### Quality bar
 
-We aim to be comprehensive but curated. Very early projects with negligible traction
-(roughly: a handful of stars, no releases, no users) are usually held back unless they do
-something genuinely novel. Recent activity and a working install path help.
+We aim to be comprehensive but curated. As a rough adoption signal, projects with **fewer than
+~50 GitHub stars** are usually held back until they gain some traction — unless they do
+something genuinely novel. Recent activity and a working install path help. Entries carry a
+live GitHub-stars badge and are sorted by star count within each section; the star count is a
+signal of adoption, not a judgment of quality.
 
 ## Entry format
 
