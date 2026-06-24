@@ -1,5 +1,7 @@
 # Awesome Agent Clients [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+**English** | [日本語](README.ja.md)
+
 > A curated list of clients and orchestrators for AI coding agents — the desktop, terminal, mobile, web, and IDE apps that **run, manage, and orchestrate** agents like Claude Code, OpenAI Codex, Gemini CLI, OpenCode, Aider, and Cursor CLI.
 
 The last couple of years turned "AI coding agent" from a single chat box into a *fleet*. The tools below are the cockpits: they launch agents, isolate each one in its own git worktree or sandbox, review the diffs, and increasingly let you steer the whole thing from your phone. This list is about the **cockpits, not the agents** — the agents themselves live in [Related](#related-agents-frameworks--protocols).
@@ -92,6 +94,8 @@ TUI dashboards and CLI-first tools that spawn and coordinate agents in panes, tm
   - `supabitapp/supacode` · FSL-1.1-ALv2 (→ Apache-2.0) · macOS · *Distinctive:* native (no Electron), GitHub-native PR/CI/conflict resolution from the terminal.
 - [Scion](https://googlecloudplatform.github.io/scion/) — Experimental host-side CLI + hub (Google Cloud) that orchestrates agents in isolated containers, each with its own worktree and credentials. 🔓 [![★](https://img.shields.io/github/stars/GoogleCloudPlatform/scion?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/GoogleCloudPlatform/scion/stargazers)
   - `GoogleCloudPlatform/scion` · Apache-2.0 · CLI/Web/Linux/Cloud · Claude Code/Gemini CLI/Codex/OpenCode · *Distinctive:* container + worktree + credential isolation per agent, agent-to-agent messaging pipeline with flow tracing, deploy to Docker/Podman/VMs/Kubernetes (experimental, not an official Google product).
+- [TAKT](https://github.com/nrslib/takt) — Open-source CLI that turns coding agents into repeatable YAML-defined workflows (plan → implement → review → fix) with isolated worktrees and human checkpoints. 🔓 [![★](https://img.shields.io/github/stars/nrslib/takt?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/nrslib/takt/stargazers)
+  - `nrslib/takt` · MIT · CLI · Claude Code/Codex/OpenCode/Cursor/Copilot CLI/Kiro · *Distinctive:* per-step roles/personas/policies/output contracts, review loops that can't be silently skipped, traceable logs and reports per task (TypeScript).
 - [Bernstein](https://bernstein.run/) — Deterministic Python orchestrator that decomposes a goal and runs CLI agents in parallel worktrees, verifying and merging with an audit chain. 🔓 [![★](https://img.shields.io/github/stars/chernistry/bernstein?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/chernistry/bernstein/stargazers)
   - `chernistry/bernstein` · Apache-2.0 · CLI/Web/VSCode/Cloud · MCP · 44 agent adapters (Claude Code/Codex/Gemini CLI/Copilot/Aider/Goose/…) · *Distinctive:* zero-LLM deterministic scheduler, verification gates (tests/lint/types/PII), HMAC-SHA256 audit chain + Ed25519-signed agent cards, optional Cloudflare Workers execution.
 - [ntm](https://github.com/Dicklesworthstone/ntm) — Go CLI that turns tmux into a control plane for spawning, tiling, and coordinating agents across panes. 🔓 [![★](https://img.shields.io/github/stars/Dicklesworthstone/ntm?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/Dicklesworthstone/ntm/stargazers)
