@@ -90,7 +90,7 @@ Warp client rather than Oz alone.
   **research-grade, not independently re-verified**. Star counts / versions / dates are
   point-in-time and may be stale. The README carries a disclaimer; corrections via PR are expected.
 
-## Star counts (read from GitHub API, 2026-06-24)
+## Star counts (read from GitHub API, 2026-06-25)
 
 All listed repos had their `stargazers_count` read directly from the GitHub API during build,
 which also re-confirmed each repo exists. Notable: `multica-ai/multica` is real and large
