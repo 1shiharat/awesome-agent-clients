@@ -86,9 +86,11 @@ Warp client rather than Oz alone.
 - Compiled from a multi-agent research workflow (June 2026): ~418 raw candidates → 210 unique
   tools discovered; 49 deeply researched in round 1 + 24 in a gap-fill round (editor-embedded
   + cloud/hosted). Every listed tool was confirmed to exist via an official site and/or repo.
-- The adversarial verification stage was largely rate-limited, so most entries are
-  **research-grade, not independently re-verified**. Star counts / versions / dates are
-  point-in-time and may be stale. The README carries a disclaimer; corrections via PR are expected.
+- Entries were later fact-checked against each project's README/site (existence, license,
+  platforms, supported agents, MCP/ACP, and feature claims) and corrected (June 2026). The
+  feature-level pass found 11 entries with major overstatements (e.g. inflated agent counts,
+  unsupported MCP tags, fabricated features) and 13 with minor ones — all fixed. Star counts /
+  versions / dates remain point-in-time and may drift; corrections via PR are welcome.
 
 ## Star counts (read from GitHub API, 2026-06-25)
 
