@@ -92,7 +92,7 @@ Warp client rather than Oz alone.
   unsupported MCP tags, fabricated features) and 13 with minor ones — all fixed. Star counts /
   versions / dates remain point-in-time and may drift; corrections via PR are welcome.
 
-## Star counts (read from GitHub API, 2026-06-25)
+## Star counts (read from GitHub API, 2026-06-29)
 
 All listed repos had their `stargazers_count` read directly from the GitHub API during build,
 which also re-confirmed each repo exists. Notable: `multica-ai/multica` is real and large
