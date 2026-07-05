@@ -114,6 +114,28 @@ Dropped from v1 (recorded here so reviewers know they were considered, not misse
   `sajithdilshan/agent-cli-plugin` (~0★), `craigsc/cmux` & `EtanHey/cmuxlayer` (name collision / niche).
 - ~160 discovered tools were never researched (round 1 capped at 50). Long-tail follow-up welcome.
 
+## 2026-07 update — additions, promotions, corrections
+
+Second discovery pass (2026-07-05) as the space kept growing. **Added 20 tools** (all verified
+in-scope, active, ≥50★): openwork, CodexMonitor, Nimbalyst, jean, proliferate (Desktop);
+herdr, toad, claude_code_bridge, dmux, claw-orchestrator, tmux-ide, h5i, mngr, Pane, lalph
+(Terminal); clideck (Web); sandbox-agent (Cloud); agent-flow, agent-sessions, agenttrace
+(Session viewers). **Promoted Symphony** (`openai/symphony`, ~25.8k★) from Related to Cloud.
+**Corrected Agent Orchestrator**: `ComposioHQ/agent-orchestrator` now redirects to
+`AgentWrapper/agent-orchestrator` (same project, renamed; license now Apache-2.0) — entry updated.
+**Flagged opcode** ⚠️ (no commits since 2025-10).
+
+### Considered but skipped (2026-07)
+- **In-scope unconfirmed / vague** (high stars, but couldn't verify they wrap external CLIs vs run
+  their own agent, or lacked a clear description): `AndyMik90/Aperant` (~14k), `AutoMaker-Org/automaker`
+  (~3.2k), `NeuralNomadsAI/CodeNomad` (~2k), `the-open-engine/zeroshot` (~1.6k), `jayminwest/warren`
+  (~108, "custom agents"). Revisit with per-repo verification.
+- **Name collision**: `mixpeek/amux` (~280★) skipped — clashes with the listed `andyrewlee/amux`.
+- **Below the bar / marginal** (noted for a future round): `VisionForge-OU/foreman`, `redevops-io/sidekick`,
+  `Ivy-Interactive/Ivy-Tendril`, `oxgeneral/ORCH`, `sortie-ai/sortie`, `vdaubry/bottega`,
+  `modimihir07/agentic-os`, `relaydeck/relaydeck`, `doordash-oss/agentic-orchestrator`,
+  `dmae97/open-multi-agent-kit`, `ikamensh/kodo`, `amirfish1/claude-command-center`, `monkilabs/opencastle`.
+
 ## Out of scope (recorded for reviewers)
 
 Goose, Hermes Desktop/Agent, OpenClaw (general assistants/agents); FleetQ (general DAG
