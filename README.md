@@ -31,6 +31,7 @@ Each entry is one line:
 - A license tag like `BSL-1.1→Apache-2.0` means it is source-available now and auto-converts to the named open license later.
 - `MCP` / `ACP` mark supported protocols. The last tag lists the *external* coding agents a tool can drive (a count when there are many).
 - Curation bar: tools with fewer than ~50 stars are held back (see [Contributing](#contributing)). Stars are a signal, not a verdict.
+- ⚠️ next to an entry flags a tool that looks unmaintained (no recent commits). Sort order is by stars, so a popular-but-stale tool can still rank high.
 
 ---
 
@@ -38,7 +39,7 @@ Each entry is one line:
 
 Native or Electron apps that run on the desktop, most with mobile/web companions.
 
-- [opcode](https://github.com/winfunc/opcode) [![★](https://img.shields.io/github/stars/winfunc/opcode?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/winfunc/opcode/stargazers) 🔓 — GUI toolkit for Claude Code: sessions, custom agents, background runs, and checkpoint review. `AGPL-3.0` `mac/Win/Linux` `MCP` `Claude Code`
+- [opcode](https://github.com/winfunc/opcode) [![★](https://img.shields.io/github/stars/winfunc/opcode?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/winfunc/opcode/stargazers) 🔓 — GUI toolkit for Claude Code: sessions, custom agents, background runs, and checkpoint review. `AGPL-3.0` `mac/Win/Linux` `MCP` `Claude Code` ⚠️ *looks unmaintained — no commits since 2025-10 (last release v0.2.0)*
 - [Superset](https://superset.sh/) [![★](https://img.shields.io/github/stars/superset-sh/superset?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/superset-sh/superset/stargazers) 🟡 — Desktop workspace running 10+ CLI agents in parallel, each in its own worktree, with built-in diff review. `Elastic-2.0` `mac` `10+ agents`
 - [Orca](https://www.onorca.dev/) [![★](https://img.shields.io/github/stars/stablyai/orca?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/stablyai/orca/stargazers) 🔓 — Agent Development Environment running many CLI agents side by side, each with its own worktree, terminal, and browser tab. `MIT` `mac/Win/Linux/iOS/Android` `MCP` `25+ agents`
 - [Paseo](https://paseo.sh/) [![★](https://img.shields.io/github/stars/getpaseo/paseo?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/getpaseo/paseo/stargazers) 🟡 — Self-hosted daemon running 5 agents from one UI, with desktop/mobile/web/CLI clients connecting to it. `source-available` `Desktop/iOS/Android/Web/CLI` `MCP` `5 agents`

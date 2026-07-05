@@ -32,6 +32,7 @@
 - `BSL-1.1→Apache-2.0` のようなタグは「今は source-available で、後から指定のオープンライセンスへ自動転換される」という意味です。
 - `MCP` / `ACP` は対応プロトコル。末尾のタグは、そのツールが動かせる外部コーディングエージェント（数が多い場合は件数）。
 - 収録の目安: star 数が約50に満たないツールは見送ります（[コントリビュート](#contributing)参照）。star はあくまで目安で、優劣の判定ではありません。
+- エントリ末尾の ⚠️ は、メンテが停滞している（最近コミットがない）ツールの目印です。並び順は star 基準なので、人気があっても停滞しているツールは上位に残ることがあります。
 
 ---
 
@@ -40,7 +41,7 @@
 
 デスクトップで動くネイティブ／Electron アプリ。モバイルや Web のコンパニオンを持つものも多い。
 
-- [opcode](https://github.com/winfunc/opcode) [![★](https://img.shields.io/github/stars/winfunc/opcode?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/winfunc/opcode/stargazers) 🔓 — Claude Code を GUI で扱うツールキット。セッション・カスタムエージェント・バックグラウンド実行・チェックポイント確認。`AGPL-3.0` `mac/Win/Linux` `MCP` `Claude Code`
+- [opcode](https://github.com/winfunc/opcode) [![★](https://img.shields.io/github/stars/winfunc/opcode?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/winfunc/opcode/stargazers) 🔓 — Claude Code を GUI で扱うツールキット。セッション・カスタムエージェント・バックグラウンド実行・チェックポイント確認。`AGPL-3.0` `mac/Win/Linux` `MCP` `Claude Code` ⚠️ *メンテ停滞ぎみ — 2025-10 以降コミットなし（最新リリース v0.2.0）*
 - [Superset](https://superset.sh/) [![★](https://img.shields.io/github/stars/superset-sh/superset?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/superset-sh/superset/stargazers) 🟡 — 10以上の CLI エージェントを並列実行、各々を専用 worktree に隔離する macOS ワークスペース。差分レビュー内蔵。`Elastic-2.0` `mac` `10+ agents`
 - [Orca](https://www.onorca.dev/) [![★](https://img.shields.io/github/stars/stablyai/orca?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/stablyai/orca/stargazers) 🔓 — 多数の CLI エージェントを並べて走らせ、各々に専用の worktree・ターミナル・ブラウザタブを与える ADE。`MIT` `mac/Win/Linux/iOS/Android` `MCP` `25+ agents`
 - [Paseo](https://paseo.sh/) [![★](https://img.shields.io/github/stars/getpaseo/paseo?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/getpaseo/paseo/stargazers) 🟡 — 5つのエージェントを1画面で動かすセルフホスト型デーモン。デスクトップ／モバイル／Web／CLI から接続。`source-available` `Desktop/iOS/Android/Web/CLI` `MCP` `5 agents`
