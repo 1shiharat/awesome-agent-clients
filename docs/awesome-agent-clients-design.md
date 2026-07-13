@@ -52,9 +52,10 @@ awesome-agent-clients/
 3. IDE & editor plugins (Neovim, JetBrains, Obsidian, …)
 4. Web & self-hosted dashboards
 5. Cloud & hosted control planes
-6. Session viewers & companion tools (observe, don't control)
-7. Archived / notable (historical reference)
-8. Related: agents, frameworks & protocols (managed agents, MCP, ACP)
+6. Mobile & remote-control clients (added 2026-07; phone/remote clients)
+7. Session viewers & companion tools (observe, don't control)
+8. Archived / notable (historical reference)
+9. Related: agents, frameworks & protocols (managed agents, MCP, ACP)
 
 Each tool is listed in its single most-appropriate section. A compact metadata sub-line
 surfaces repo · license · platforms · supported agents · the one or two distinctive features —
@@ -135,6 +136,38 @@ herdr, toad, claude_code_bridge, dmux, claw-orchestrator, tmux-ide, h5i, mngr, P
   `Ivy-Interactive/Ivy-Tendril`, `oxgeneral/ORCH`, `sortie-ai/sortie`, `vdaubry/bottega`,
   `modimihir07/agentic-os`, `relaydeck/relaydeck`, `doordash-oss/agentic-orchestrator`,
   `dmae97/open-multi-agent-kit`, `ikamensh/kodo`, `amirfish1/claude-command-center`, `monkilabs/opencastle`.
+
+## 2026-07 second pass — comprehensive expansion (~39 added)
+
+A broader three-angle discovery sweep (GitHub, directories/HN/PH, category-focused) surfaced
+far more of the (fast-growing) space. Added ~39 verified in-scope tools and a **new "Mobile &
+remote-control clients" section** (Happy ~22.6k★, Claude Code UI ~12.6k, VibeTunnel ~4.6k, takopi).
+Highlights added: CodeLayer/HumanLayer (~11k), ralph-claude-code (~9.5k), Omnigent (~7.2k),
+Mission Control (~5.7k), Aperant (~14.4k), automaker, CodeNomad, Helmor, Agor, HolyClaude,
+Agency Orchestrator, CAO (AWS Labs), multi-agent-shogun, claude_code_agent_farm, Citadel,
+zeroshot, babysitter, and the Neovim/Emacs cluster (claudecode.nvim, claude-code.nvim,
+claude-code-ide.el, agent-shell). Closed-source cloud: **Tembo, Niteshift, Duet**. **claude-flow**
+(~64k★) placed in Related (swarm framework, not a turnkey client). **Omnara** moved to Archived
+(repo archived). **Agent Orchestrator** confirmed = `AgentWrapper/agent-orchestrator`
+(`ComposioHQ/agent-orchestrator` redirects to it — same project, not a duplicate).
+
+### Skipped / deferred (2026-07 second pass)
+- **Name collisions**: `mixpeek/amux` (clashes with `andyrewlee/amux`).
+- **Own agent / generic framework (out of scope)**: `1jehuang/jcode`, `stagewise-io/stagewise`,
+  `collaborator-ai/collab-public`, `0-AI-UG/cate`, `ariana-dot-dev/ariana`, `Runfusion/Fusion`,
+  `thesongzhu/Friday`, `CompanyHelm/companyhelm`, `mozilla-ai/otari`, `mathomhaus/guild`, Pochi.
+- **Support tooling, not agent runners**: `golbin/gw`, `rohansx/workz`, `clash-sh/clash`,
+  `ethanhq/cc-fleet`, `sahithvibudhi/vibe-tree`, `aidenybai/ghast`.
+- **Ralph-loop family** (added the top 2; others noted): `mikeyobrien/ralph-orchestrator`,
+  `subsy/ralph-tui`, `mikehostetler/wreckit`, `looptroop-ai/LoopTroop`.
+- **Below ~50★ or marginal, revisit**: `sortie-ai/sortie` (~103), `amirfish1/claude-command-center`
+  (~93), `oxgeneral/ORCH` (~92), `nutthouse/tutti` (~93), `ikamensh/kodo` (~116),
+  `monkilabs/opencastle` (~56), `jarredkenny/jmux`, `frenchie4111/harness`, `ouijit/ouijit`,
+  `hueyexe/opencode-ensemble`, `leodavinci1/kanbots`, `aannoo/hcom`, plus <50★:
+  `ArthurDEV44/paneflow`, `usemozzie/mozzie`, `DanWahlin/ai-agent-board`.
+- **Closed-source, notability unverified**: Commander AI, atrium, Scape, Codelegate, Medusa,
+  Smith, KingCoding, Invoker, Hermes (contextstudios), PATAPIM (curated-directory listed but
+  weaker independent signal), Agent 37.
 
 ## Out of scope (recorded for reviewers)
 
