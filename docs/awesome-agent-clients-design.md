@@ -28,6 +28,9 @@ Borderline handling:
   clearly labelled.
 - General-purpose assistants / DAG frameworks / sandbox infrastructure (Goose, OpenClaw, FleetQ,
   AgentTier, Hermes Agent) are **out of scope** → "Related".
+- Adjacent env/profile/worktree helpers that support agent workflows but don't run/manage the
+  agents (e.g. `codex-profiles`, git-worktree wrappers) → **Related › Adjacent tooling**, not the
+  main list.
 
 ## Repository structure
 

@@ -226,6 +226,9 @@
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io) — エージェントをツールやデータにつなぐ。このリストでいちばん広く使われている統合プロトコル。
 - [Agent Client Protocol (ACP)](https://agentclientprotocol.com) — エージェントをエディタやホストクライアントに埋め込む Zed のプロトコル。Obsidian Agent Client・CodeCompanion.nvim・Agentic.nvim・Agent of Empires・Agent Kanban が利用。
 
+**隣接ツール（エージェントの実行はしないが、そのワークフローを支える）**
+- [codex-profiles](https://github.com/Ducksss/codex-profiles) — Codex CLI/Desktop を隔離した `CODEX_HOME` プロファイルで起動し、`auth.json` のトークンをコピーせずにアカウント／コンテキストを切り替える依存フリーの Bash ラッパー。`MIT`
+
 <a id="contributing"></a>
 ## コントリビュート
 

@@ -216,6 +216,9 @@ Not clients/orchestrators themselves, but the things the tools above manage and 
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io) — connects agents to tools/data; the dominant integration protocol here.
 - [Agent Client Protocol (ACP)](https://agentclientprotocol.com) — Zed's protocol for embedding agents in editor/host clients; used by Obsidian Agent Client, CodeCompanion.nvim, Agentic.nvim, Agent of Empires, and Agent Kanban.
 
+**Adjacent tooling (supports agent workflows, but doesn't run the agents)**
+- [codex-profiles](https://github.com/Ducksss/codex-profiles) — Dependency-free Bash wrapper that runs Codex CLI/Desktop under isolated `CODEX_HOME` profiles, for switching accounts/contexts without copying `auth.json` tokens. `MIT`
+
 ## Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for the inclusion
