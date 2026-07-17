@@ -172,6 +172,34 @@ claude-code-ide.el, agent-shell). Closed-source cloud: **Tembo, Niteshift, Duet*
   Smith, KingCoding, Invoker, Hermes (contextstudios), PATAPIM (curated-directory listed but
   weaker independent signal), Agent 37.
 
+## 2026-07-17 refresh — latest-info pass
+
+Star/status refresh over all badged repos + a targeted discovery sweep for tools created or
+newly-trending in the late-June→mid-July 2026 window.
+
+- **Status change**: `21st-dev/1code` is now **archived** → moved Desktop → Archived & notable
+  (grey badge, "repo archived"), matching Crystal/Terragon/Omnara. `omnara-ai/omnara` re-confirmed
+  archived (already in Archived). `winfunc/opcode` still ⚠️ (no commits since 2025-10).
+- **Added 8** verified in-scope, active, ≥50★ tools (license/platform read from GitHub API):
+  - Desktop: **codeg** (`xintaofei/codeg`, ~2.1k★, Apache-2.0 — aggregates Claude Code/Codex/OpenCode/Pi/Grok Build sessions).
+  - Terminal: **OpenSwarm** (`unohee/OpenSwarm`, ~819★, MIT — Claude Code CLI dev-team pipeline; `Intrect-io/OpenSwarm` redirects here),
+    **hcom** (`aannoo/hcom`, ~384★, MIT), **codex-orchestrator** (`kingbootoshi/codex-orchestrator`, ~325★, MIT — tmux/Codex),
+    **opencode-ensemble** (`hueyexe/opencode-ensemble`, ~169★, MIT), **kodo** (`ikamensh/kodo`, ~116★, MIT),
+    **jmux** (`jarredkenny/jmux`, ~72★, AGPL-3.0 — tmux sidebar).
+  - Web & self-hosted: **kanbots** (`leodavinci1/kanbots`, ~538★, MIT — kanban, each task a Claude Code/Codex agent).
+- **Deferred candidates that crossed ~50★ but held back this pass** (generic/thin descriptions,
+  stale, or category unclear — revisit with per-repo verification): `oxgeneral/ORCH` (~91),
+  `frenchie4111/harness` (~84), `sortie-ai/sortie` (~106, cloud vs CLI unclear), `nutthouse/tutti`
+  (~100, last push 2026-05-05), `monkilabs/opencastle` (~57, last push 2026-05-18),
+  `ouijit/ouijit` (~121, AGPL — worktree task-manager, GUI category unclear).
+  Still <50★: `usemozzie/mozzie` (48), `DanWahlin/ai-agent-board` (41), `ArthurDEV44/paneflow` (35).
+- **Newly-created but held back**: `100yenadmin/Lossless-Codex-Orchestrator-LCO` (~51★, created
+  2026-06-28) — genuinely new but borderline (session-recall/approval-gate heavy). Revisit if it grows.
+- **Confirmed out of scope / not new**: `iOfficeAI/AionUi` (~30k, created Aug 2025, not new),
+  `farion1231/cc-switch` (~118k, provider/config switcher not a runner), `PROrunner926/copilot-cache-scout`
+  (cost benchmark), `cpatterson71/agentrooms` (fork of listed `baryhuang/claude-code-by-agents`),
+  AgentsRoom (no public repo).
+
 ## Out of scope (recorded for reviewers)
 
 Goose, Hermes Desktop/Agent, OpenClaw (general assistants/agents); FleetQ (general DAG
