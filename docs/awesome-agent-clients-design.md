@@ -200,6 +200,38 @@ newly-trending in the late-June→mid-July 2026 window.
   (cost benchmark), `cpatterson71/agentrooms` (fork of listed `baryhuang/claude-code-by-agents`),
   AgentsRoom (no public repo).
 
+## 2026-07-26 refresh — July-created delta
+
+Incremental discovery scoped to repos **created in July 2026** and not already listed. All
+additions verified via GitHub API (exists, not archived, stars, license, created/pushed dates).
+
+- **Added 12** in-scope, active tools:
+  - Desktop: **BossConsole** (`risa-labs-inc/BossConsole`, ~189★, Apache-2.0 — JVM operator's console for Claude Code/Codex/Gemini/OpenCode).
+  - Terminal: **ringer** (`NateBJones-Projects/ringer`, ~182★, custom license — `codex exec` swarm + web HUD),
+    **gridbash** (`jasonsuhari/gridbash`, ~139★, MIT — 100-pane terminal grid),
+    **claude-lane-stack** (`VKirill/claude-lane-stack`, ~124★, MIT — PM→AGY/Grok/Codex lanes, auto-merge),
+    **ccmux** (`epilande/ccmux`, ~99★, MIT — tmux agent-pane tracker),
+    **outsourcerer** (`alexgreensh/outsourcerer`, ~85★, custom license — delegate to cheaper harnesses),
+    **ultracodex** (`YuanpingSong/ultracodex`, ~62★, Apache-2.0 — Claude-Code workflow scripts on Codex CLI),
+    **sigbound** (`surya-koritala/sigbound`, ~51★, Apache-2.0 — parallel worktrees, test-gated auto-merge, BYO model).
+  - Web & self-hosted: **pi-dispatch** (`edgehero/pi-dispatch`, ~77★, MIT — pi-agent as a triggered service),
+    **fox-ai-roundtable** (`PeterPanSwift/fox-ai-roundtable`, ~75★, no license — one prompt → 3 CLIs).
+  - Session viewers & companion: **recensa** (`S40911120/recensa`, ~65★, MIT — Claude Code transcript viewer),
+    **unsnooze** (`saaranshM/unsnooze`, ~60★, MIT — auto-resume limit-stopped agent sessions).
+- **Held back — Claude Code skill/plugin orchestrators** (they orchestrate external agent CLIs but
+  ship as a CC skill/plugin, not a standalone app/CLI — a category the list has deliberately kept out,
+  same as env/profile packs → Related › Adjacent tooling if ever added): `0xwilliamortiz/agents-council`
+  (~111), `markfulton/claude-antigravity-agents` (~107), `olsenbrands/fable-foreman` (~90),
+  `tomascupr/sous-chef` (~67), `cathrynlavery/codex-build` (~65), `jvogan/a-fable-of-codexes` (~43),
+  `joeseesun/qiaomu-model-cli` (~40).
+- **Held back — under ~50★ or niche** (revisit if they grow): `omergocmen/CrewCtl` (48),
+  `04mg/caw` (48, web multiplexer — novel), `scp3500/pi-manager` (46), `ardhaecosystem/RUDR9` (41, profile pack).
+- **Verified out of scope** (Claude-only config/subagent packs, plan visualizers, memory/log/benchmark/security
+  tools — no external agent wrapped): `Nanako0129/pilotfish` (~540, CC-subagent config),
+  `PromptPartner/agentsmith` (~255, prompt-rules harness), `OthmanAdi/plandeck` (~62, "no AI" YAML kanban),
+  `Miguok/fable-harness` (~196), `per-simmons/fable-orchestration`, `ebowman/domestique`, and assorted
+  memory/proxy/benchmark/security-agent repos.
+
 ## Out of scope (recorded for reviewers)
 
 Goose, Hermes Desktop/Agent, OpenClaw (general assistants/agents); FleetQ (general DAG
