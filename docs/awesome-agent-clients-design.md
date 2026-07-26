@@ -232,6 +232,27 @@ additions verified via GitHub API (exists, not archived, stars, license, created
   `Miguok/fable-harness` (~196), `per-simmons/fable-orchestration`, `ebowman/domestique`, and assorted
   memory/proxy/benchmark/security-agent repos.
 
+## 2026-07-26 curation — scope/freshness tightening
+
+Quality pass ahead of a future `sindresorhus/awesome` submission (which weighs curation over
+breadth). Four entries moved out of the main platform sections:
+
+- **opcode** (`winfunc/opcode`) — Desktop → **Archived**. No commits since 2025-10 (was ⚠️-flagged);
+  a stale tool in a primary section is misleading. Badge greyed, kept for historical reference.
+- **CodeLayer / HumanLayer** (`humanlayer/humanlayer`) — Desktop → **Related › frameworks & infra**.
+  The repo/badge is the HumanLayer human-in-the-loop *framework* monorepo (star count reflects the
+  framework, not the CodeLayer app); more infrastructure than a standalone client.
+- **mux** (`coder/mux`) — Desktop → **Related › agents that double as desktop apps**. Drives its own
+  agent loop rather than orchestrating external agent CLIs.
+- **Symphony** (`openai/symphony`) — Cloud → **Related › frameworks & infra**. A spec + Elixir
+  reference implementation, not a turnkey client (same treatment as claude-flow).
+
+Deferred (not done this pass): raising the ~50★ curation bar to ~100★ to further tighten the list —
+revisit when preparing the actual mother-list submission. Note on that submission: it requires the
+repo's main README to pass `awesome-lint`, which forbids per-entry badges and the `- [name](url) - desc.`
+format — i.e. converting away from the star-badge / star-ranked design. Deferred until the list has
+real traction; grow via announcement channels (Show HN / Zenn / X / Reddit) first.
+
 ## Out of scope (recorded for reviewers)
 
 Goose, Hermes Desktop/Agent, OpenClaw (general assistants/agents); FleetQ (general DAG

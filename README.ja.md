@@ -43,20 +43,17 @@
 デスクトップで動くネイティブ／Electron アプリ。モバイルや Web のコンパニオンを持つものも多い。
 
 - [Orca](https://www.onorca.dev/) [![★](https://img.shields.io/github/stars/stablyai/orca?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/stablyai/orca/stargazers) 🔓 — 多数の CLI エージェントを並べて走らせ、各々に専用の worktree・ターミナル・ブラウザタブを与える ADE。`MIT` `mac/Win/Linux/iOS/Android` `MCP` `25+ agents`
-- [opcode](https://github.com/winfunc/opcode) [![★](https://img.shields.io/github/stars/winfunc/opcode?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/winfunc/opcode/stargazers) 🔓 — Claude Code を GUI で扱うツールキット。セッション・カスタムエージェント・バックグラウンド実行・チェックポイント確認。`AGPL-3.0` `mac/Win/Linux` `MCP` `Claude Code` ⚠️ *メンテ停滞ぎみ — 2025-10 以降コミットなし（最新リリース v0.2.0）*
 - [openwork](https://github.com/different-ai/openwork) [![★](https://img.shields.io/github/stars/different-ai/openwork?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/different-ai/openwork/stargazers) 🟡 — Claude Cowork のオープンソース代替。opencode ベースのエージェントセッションをローカル／リモートで実行・管理するデスクトップクライアント。`source-available` `Desktop/Web` `opencode`
 - [Aperant](https://aperant.com) [![★](https://img.shields.io/github/stars/AndyMik90/Aperant?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/AndyMik90/Aperant/stargazers) 🔓 — 複数の Claude Code ターミナルを起動・連携させ、自律的にマルチセッションでコーディングする Electron 製 Kanban アプリ。`AGPL-3.0` `mac` `Claude Code`
 - [Superset](https://superset.sh/) [![★](https://img.shields.io/github/stars/superset-sh/superset?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/superset-sh/superset/stargazers) 🟡 — 10以上の CLI エージェントを並列実行、各々を専用 worktree に隔離する macOS ワークスペース。差分レビュー内蔵。`Elastic-2.0` `mac` `10+ agents`
 - [Paseo](https://paseo.sh/) [![★](https://img.shields.io/github/stars/getpaseo/paseo?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/getpaseo/paseo/stargazers) 🟡 — 5つのエージェントを1画面で動かすセルフホスト型デーモン。デスクトップ／モバイル／Web／CLI から接続。`source-available` `Desktop/iOS/Android/Web/CLI` `MCP` `5 agents`
-- [CodeLayer](https://github.com/humanlayer/humanlayer) [![★](https://img.shields.io/github/stars/humanlayer/humanlayer?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/humanlayer/humanlayer/stargazers) 🔓 — 複数の Claude Code セッションを並列で実行・管理する HumanLayer 製の Tauri デスクトップ IDE。承認ワークフロー付き。`Apache-2.0` `Desktop` `Claude Code`
 - [CodePilot](https://github.com/op7418/CodePilot) [![★](https://img.shields.io/github/stars/op7418/CodePilot?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/op7418/CodePilot/stargazers) 🟡 — Claude Code CLI をラップするクロスプラットフォームのデスクトップクライアント。複数プロバイダ＋メッセージアプリ遠隔操作。`BSL-1.1→Apache-2.0` `mac/Win/Linux` `MCP` `Claude Code`
 - [emdash](https://emdash.sh/) [![★](https://img.shields.io/github/stars/generalaction/emdash?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/generalaction/emdash/stargazers) 🔓 — 多数のコーディングエージェント CLI を並列実行、各々を専用 worktree に隔離するデスクトップアプリ。横断差分レビュー付き。`Apache-2.0` `mac/Win/Linux` `10+ agents`
 - [CodexMonitor](https://github.com/Dimillian/CodexMonitor) [![★](https://img.shields.io/github/stars/Dimillian/CodexMonitor?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/Dimillian/CodexMonitor/stargazers) 🔓 — 複数の Codex エージェントを監視・オーケストレーションする macOS アプリ。`MIT` `mac` `Codex`
 - [automaker](https://automaker.app/) [![★](https://img.shields.io/github/stars/AutoMaker-Org/automaker?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/AutoMaker-Org/automaker/stargazers) 🔓 — 作りたい機能を書くとエージェントが実装していく Kanban 開発スタジオ。Codex・Copilot・Cursor・Gemini・OpenCode をプロバイダとして追加できる。`MIT` `Desktop/Web` `Claude Code/Codex/+3`
-- [CodeNomad](https://github.com/NeuralNomadsAI/CodeNomad) [![★](https://img.shields.io/github/stars/NeuralNomadsAI/CodeNomad?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/NeuralNomadsAI/CodeNomad/stargazers) 🔓 — OpenCode CLI をマルチセッションのデスクトップ作業場にまとめる Electron/Tauri 製「コックピット」。`MIT` `Desktop` `OpenCode`
 - [codeg](https://github.com/xintaofei/codeg) [![★](https://img.shields.io/github/stars/xintaofei/codeg?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/xintaofei/codeg/stargazers) 🔓 — Claude Code・Codex・OpenCode・Pi・Grok Build のセッションを一つにまとめるマルチエージェント作業場。デスクトップアプリ・セルフホストサーバー・Docker で動く。`Apache-2.0` `mac/Win/Linux/self-host` `Claude Code/Codex/OpenCode`
+- [CodeNomad](https://github.com/NeuralNomadsAI/CodeNomad) [![★](https://img.shields.io/github/stars/NeuralNomadsAI/CodeNomad?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/NeuralNomadsAI/CodeNomad/stargazers) 🔓 — OpenCode CLI をマルチセッションのデスクトップ作業場にまとめる Electron/Tauri 製「コックピット」。`MIT` `Desktop` `OpenCode`
 - [AgentsMesh](https://agentsmesh.ai/) [![★](https://img.shields.io/github/stars/AgentsMesh/AgentsMesh?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/AgentsMesh/AgentsMesh/stargazers) 🟡 — 複数マシンのセルフホスト・ランナー群を1コンソールから操り、ターミナルエージェントを動かす。`BSL-1.1→GPL-2.0` `Web/Desktop/iOS/CLI` `5 agents`
-- [mux](https://mux.coder.com/) [![★](https://img.shields.io/github/stars/coder/mux?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/coder/mux/stargazers) 🔓 — 多数のエージェントを Local／Worktree／SSH ランタイムで並列実行する Coder 製アプリ（独自エージェントループ）。`AGPL-3.0` `mac/Linux/Web/VSCode` `multi-model`
 - [Agent Teams AI](https://agentteams.live/) [![★](https://img.shields.io/github/stars/777genius/agent-teams-ai?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/777genius/agent-teams-ai/stargazers) 🔓 — エージェントのチームが互いにメッセージし、コードを相互レビューするデスクトップアプリ。`AGPL-3.0` `mac/Win/Linux` `MCP` `Claude Code/Codex/OpenCode`
 - [Nimbalyst](https://github.com/Nimbalyst/nimbalyst) [![★](https://img.shields.io/github/stars/Nimbalyst/nimbalyst?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/Nimbalyst/nimbalyst/stargazers) 🔓 — Codex・Claude Code・OpenCode・Copilot 用の視覚的ワークスペース兼 並列セッション／kanban マネージャ。赤緑の差分承認と iOS コンパニオン付き。`MIT` `Desktop/Web/iOS` `Codex/Claude Code/+2`
 - [Helmor](https://github.com/dohooo/helmor) [![★](https://img.shields.io/github/stars/dohooo/helmor?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/dohooo/helmor/stargazers) 🔓 — 多数のコーディングエージェントを並列実行し、各々を隔離した git ワークスペースで動かすローカルデスクトップワークベンチ。ワンクリック PR 付き。`Apache-2.0` `mac/Win` `Claude Code/Codex/Cursor/OpenCode/Kimi`
@@ -182,7 +179,6 @@
 エージェントの群れをクラウドで動かす、ホスト型（セルフホストも可）のコントロールプレーン。
 
 - [Oz](https://www.warp.dev/oz) [![★](https://img.shields.io/github/stars/warpdotdev/warp?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/warpdotdev/warp/stargazers) 🟡 — 複数ハーネスをまたいでクラウドのコーディングエージェント群を走らせ・見張る Warp 製プラットフォーム。`MIT/AGPLv3` `Cloud/Web/Desktop/CLI` `MCP` `4 agents` *(★は Warp クライアント全体)*
-- [Symphony](https://github.com/openai/symphony) [![★](https://img.shields.io/github/stars/openai/symphony?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/openai/symphony/stargazers) 🔓 — プロジェクト／ボードの作業を、隔離された自律的なコーディングエージェントの実装ランに変える OpenAI 製オーケストレーター（仕様＋Elixir リファレンス実装）。`Apache-2.0` `Cloud/Web` `Codex`
 - [sandbox-agent](https://github.com/rivet-dev/sandbox-agent) [![★](https://img.shields.io/github/stars/rivet-dev/sandbox-agent?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/rivet-dev/sandbox-agent/stargazers) 🔓 — コーディングエージェントをサンドボックス内で走らせ、HTTP で操作できるようにする（Rivet）。`Apache-2.0` `Cloud/CLI` `Claude Code/Codex/OpenCode/Amp`
 - [Centaur](https://centaur.run/) [![★](https://img.shields.io/github/stars/paradigmxyz/centaur?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/paradigmxyz/centaur/stargazers) 🔓 — CLI エージェントハーネスを隔離 K8s サンドボックスで動かし、Slack/API から操作する Paradigm 製のセルフホスト制御プレーン。`Apache-2.0/MIT` `Cloud/CLI/Slack` `Claude Code/Codex/Amp`
 - [Tembo](https://tembo.io) 🔒 — コーディングエージェントをクラウドへ移すプラットフォーム。Claude Code・Codex・Cursor・Amp・OpenCode をリポジトリ横断で並列クラウドサンドボックス実行し、Slack/Linear/GitHub/Jira から起動。`closed-source` `Cloud/Slack` `5 agents`
@@ -223,6 +219,7 @@
 - [Claude Code Board](https://cc-board.cablate.com/) [![★](https://img.shields.io/github/stars/cablate/Claude-Code-Board?style=flat-square&label=%E2%98%85&color=lightgrey)](https://github.com/cablate/Claude-Code-Board/stargazers) — 複数の Claude Code CLI セッションを束ねる Web の kanban 風マネージャ。`MIT` **保守終了（2026-01）**
 - [Omnara](https://github.com/omnara-ai/omnara) [![★](https://img.shields.io/github/stars/omnara-ai/omnara?style=flat-square&label=%E2%98%85&color=lightgrey)](https://github.com/omnara-ai/omnara/stargazers) — Claude Code/Codex をスマホから起動・監視・操作するモバイルファーストの司令室（YC S25）。`Apache-2.0` **リポジトリはアーカイブ済み**
 - [1code](https://1code.dev/) [![★](https://img.shields.io/github/stars/21st-dev/1code?style=flat-square&label=%E2%98%85&color=lightgrey)](https://github.com/21st-dev/1code/stargazers) — Claude Code と Codex をローカル／クラウドサンドボックスで worktree 隔離して動かしたオープンコアのデスクトップ／Web クライアント。`Apache-2.0` **リポジトリはアーカイブ済み**
+- [opcode](https://github.com/winfunc/opcode) [![★](https://img.shields.io/github/stars/winfunc/opcode?style=flat-square&label=%E2%98%85&color=lightgrey)](https://github.com/winfunc/opcode/stargazers) — Claude Code を GUI で扱うツールキット。セッション・カスタムエージェント・バックグラウンド実行・チェックポイント確認。`AGPL-3.0` **メンテ停滞 — 2025-10 以降コミットなし（最新リリース v0.2.0）**
 
 <a id="related"></a>
 ## 関連: エージェント・フレームワーク・プロトコル
@@ -236,11 +233,14 @@
 - [Goose](https://github.com/block/goose) — LLM に直接つなぎ、ACP サーバーとしても動く Block の拡張可能な Rust 製エージェント。Orca・Paseo・cmux などに動かされる側。
 - [Hermes Agent](https://github.com/NousResearch/hermes-agent) — Nous Research の汎用自己改善エージェント。Agent Kanban・AI Maestro が ACP 経由で呼び出し、Multica でも対応エージェントとして使える。
 - [OpenClaw](https://github.com/openclaw/openclaw) — セルフホストのパーソナルアシスタントランタイム。Antfarm と OpenGoat の土台。
+- [mux](https://mux.coder.com/) — 多数のエージェントを Local／Worktree／SSH ランタイムで並列実行する Coder 製アプリ。ただし外部 CLI を束ねるのではなく独自のエージェントループで動く。
 
 **マルチエージェントフレームワーク／インフラ（隣接領域）**
 - [FleetQ](https://github.com/escapeboy/agent-fleet-o) — ネイティブ MCP サーバーを備えた汎用マルチエージェント DAG／ワークフロープラットフォーム。
 - [AgentTier](https://github.com/agenttier/agenttier) — エージェントを動かすための Kubernetes ネイティブなサンドボックス as a service（インフラ層）。
 - [claude-flow](https://github.com/ruvnet/claude-flow) — Claude Code / Codex をネイティブ統合し、協調するマルチエージェント・スウォームを展開するエージェント・メタハーネス（〜64k★）。ターンキーのクライアントというより重量級のスウォームフレームワーク。
+- [CodeLayer / HumanLayer](https://github.com/humanlayer/humanlayer) — HumanLayer の human-in-the-loop 承認フレームワーク。リポジトリ（＝バッジの星数）はフレームワーク本体で、その上で動くデスクトップ IDE が CodeLayer。
+- [Symphony](https://github.com/openai/symphony) — ボード作業を自律的な Codex ランに変える OpenAI のオーケストレーション仕様＋Elixir リファレンス実装。ターンキーのクライアントというより仕様・参照実装。
 
 **プロトコル**
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io) — エージェントをツールやデータにつなぐ。このリストでいちばん広く使われている統合プロトコル。
