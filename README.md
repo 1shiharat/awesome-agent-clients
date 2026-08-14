@@ -38,6 +38,8 @@ Each entry is one line:
 
 ## Desktop & multi-platform clients
 
+- [Clickyy](https://github.com/jayamitkatariya/clickyyy) - Shake your cursor to summon an AI agent that sees your screen and clicks, types, drags, and acts for you on macOS. Open-source, MIT.
+
 Native or Electron apps that run on the desktop, most with mobile/web companions.
 
 - [Orca](https://www.onorca.dev/) [![★](https://img.shields.io/github/stars/stablyai/orca?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/stablyai/orca/stargazers) 🔓 — Agent Development Environment running many CLI agents side by side, each with its own worktree, terminal, and browser tab. `MIT` `mac/Win/Linux/iOS/Android` `MCP` `25+ agents`
