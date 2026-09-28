@@ -184,6 +184,7 @@
 - [Tembo](https://tembo.io) 🔒 — コーディングエージェントをクラウドへ移すプラットフォーム。Claude Code・Codex・Cursor・Amp・OpenCode をリポジトリ横断で並列クラウドサンドボックス実行し、Slack/Linear/GitHub/Jira から起動。`closed-source` `Cloud/Slack` `5 agents`
 - [Niteshift](https://niteshift.dev) 🔒 — コーディングエージェントのためのフルスタッククラウド。Claude Code・Codex・OpenCode・Pi を持ち込み、ランタイム＋検証ワークフローと数十の同時セッションを Slack/Linear/GitHub から起動。`closed-source` `Cloud/Slack` `4 agents`
 - [Duet](https://duet.so) 🔒 — Claude Code を常時稼働のクラウドサーバーで動かし（セッションは数日持続）、スマホから操作できる。スケジューリングとチームチャンネル UI 付き。`closed-source` `Cloud/Mobile` `Claude Code`
+- [Layerbase Workspaces](https://layerbase.com/workspaces) 🔒 — コーディングエージェント（Claude Code、Codex、Cursor、Devin、OpenCode、Grok Build）用のプライベートな Ubuntu 24.04 サーバー。月額固定で $10 から。ノート PC を閉じても動き続ける。`closed-source` `Cloud` `6 agents`
 
 <a id="mobile"></a>
 ## モバイル／遠隔操作クライアント

@@ -178,6 +178,7 @@ Hosted (or self-hostable) control planes that run agent fleets in the cloud.
 - [Tembo](https://tembo.io) 🔒 — Platform to move coding agents to the cloud: orchestrates Claude Code, Codex, Cursor, Amp, or OpenCode across repos in parallel cloud sandboxes, triggered from Slack/Linear/GitHub/Jira. `closed-source` `Cloud/Slack` `5 agents`
 - [Niteshift](https://niteshift.dev) 🔒 — Full-stack cloud for coding agents: bring Claude Code, Codex, OpenCode, or Pi, with runtime + verification workflows and dozens of concurrent sessions triggered from Slack/Linear/GitHub. `closed-source` `Cloud/Slack` `4 agents`
 - [Duet](https://duet.so) 🔒 — Runs Claude Code on a persistent, always-on cloud server (sessions survive for days), controllable from your phone, with scheduling and a team channel interface. `closed-source` `Cloud/Mobile` `Claude Code`
+- [Layerbase Workspaces](https://layerbase.com/workspaces) 🔒 — Private Ubuntu 24.04 servers for coding agents (Claude Code, Codex, Cursor, Devin, OpenCode, Grok Build); flat monthly from $10; keeps running when the laptop is closed. `closed-source` `Cloud` `6 agents`
 
 ## Mobile & remote-control clients
 
