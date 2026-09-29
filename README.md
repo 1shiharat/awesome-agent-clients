@@ -187,6 +187,7 @@ Apps and bridges for launching or steering coding agents from a phone or remote 
 - [Claude Code UI](https://github.com/siteboon/claudecodeui) [![★](https://img.shields.io/github/stars/siteboon/claudecodeui?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/siteboon/claudecodeui/stargazers) 🔓 — Web + mobile GUI to remotely manage Claude Code, OpenCode, Cursor CLI, and Codex sessions. `AGPL-3.0` `Web/Mobile` `Claude Code/OpenCode/Cursor/Codex`
 - [VibeTunnel](https://github.com/amantus-ai/vibetunnel) [![★](https://img.shields.io/github/stars/amantus-ai/vibetunnel?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/amantus-ai/vibetunnel/stargazers) 🔓 — Turns any browser into a terminal to command your coding agents on the go, built for driving Claude Code from a phone. `MIT` `Web/mobile` `Claude Code/+`
 - [takopi](https://github.com/banteg/takopi) [![★](https://img.shields.io/github/stars/banteg/takopi?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/banteg/takopi/stargazers) 🔓 — Telegram bridge to drive Codex, Claude Code, OpenCode, and Pi agents from chat. `MIT` `Telegram` `Codex/Claude Code/OpenCode/Pi`
+- [PinkCollab](https://github.com/3xian/PinkCollab) [![★](https://img.shields.io/github/stars/3xian/PinkCollab?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/3xian/PinkCollab/stargazers) 🔓 — Native Android client to start, monitor, and steer Oh My Pi sessions on a remote host through a self-hosted gateway. `MIT` `Android` `Oh My Pi`
 
 ## Session viewers & companion tools
 
