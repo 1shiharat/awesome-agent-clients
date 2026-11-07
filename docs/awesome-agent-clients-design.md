@@ -253,6 +253,52 @@ repo's main README to pass `awesome-lint`, which forbids per-entry badges and th
 format — i.e. converting away from the star-badge / star-ranked design. Deferred until the list has
 real traction; grow via announcement channels (Show HN / Zenn / X / Reddit) first.
 
+## 2026-11-07 refresh — full audit after a 3.5-month gap
+
+All badged repos re-read through the GitHub GraphQL API; non-GitHub links re-fetched. Discovery ran
+24 GitHub searches (repos created since 2026-03, ≥150★) and each candidate's README was read.
+
+- **Removed — repo gone (404)**: `AgentsMesh/AgentsMesh` (site also 404), `joewinke/jat` (site also
+  down), `wandb/catnip` (catnip.run is an empty shell, no replacement repo found).
+- **Removed — pivoted**: **Duet** (`duet.so` now redirects to Bento, an "every kind of AI"
+  subscription, not a Claude Code server).
+- **Removed — below the bar**: `surya-koritala/sigbound` (~51★ at listing, 38★ now).
+- **De-duplicated**: `bfly123/claude_code_bridge` turned out to redirect to `SeemSeam/claude_codex_bridge`,
+  already listed as "Claude Codex Bridge"; the old entry was dropped.
+- **Product renames**: Superset → **Paradev** (`ParadevAI/Paradev`; LICENSE.md is now MIT, so 🟡→🔓,
+  README states macOS + experimental Linux), Agent Orchestrator → **Orchestrator**
+  (`OrchestratorInc/agent-orchestrator`, per PR #20), claude-flow → **Ruflo** (`ruvnet/ruflo`),
+  mux → **Xum** (`coder/xum`).
+- **Repo moves**: bernstein, Pane, Agent of Empires, herdr, OpenSwarm, codeg, sandbox-agent
+  (now the `rivet-dev/agents` monorepo, so its badge covers more than sandbox-agent), OpenCode,
+  Goose, Pi (`earendil-works/pi`; the old `parallel-web/pi` link was dead).
+- **License fixes**: herdr → Apache-2.0 (🟡→🔓), Kanban Code → Apache-2.0, both confirmed in their
+  READMEs. Warp kept as `MIT/AGPLv3` (API reports only AGPL). NOASSERTION rows were not re-read.
+- **Description refresh**: herdr now describes itself as an agent runtime with a client ecosystem
+  (Ovis, Collie, Heeler, Roamgate), so its entry was rewritten from its README.
+- **Link fixes**: emdash → emdash.com, unsnooze → unsnooze.dev; automaker.app (404) and 1code.dev
+  (redirect) now point at their repos.
+- **⚠️ policy**: now applied by rule: no default-branch commit for **180+ days**, primary sections
+  only. Applied to 8: claude-code-plus, claude-code.nvim, ralphy, antfarm, FleetCode, CodexMonitor,
+  opengoat, constellagent. Moving to Archived stays reserved for repos actually archived.
+- **Added 32** (active, in scope, ≥250★ unless noted): Orkas, nodeterm, Lody, Alethe, PandaCode, Vicoa, TasteCode, Runner, diri, Hermes IDE, Shipyard, Monet, Termio, agent-manager, Martty, Cezar, omg.dev, MulmoTerminal, Grasp, Zozo, Remodex, Nexting, DS Harness Remote, Ovis, Collie, Heeler, Roamgate, Clawd on Desk, abtop, zoetrope, Agenttrail, tmux-agent-sidebar; plus **Sandcastle** under
+  Related › frameworks (an SDK). From the queue: Orkas (PR #5), agent-manager (PR #15, badge uses the
+  new `wainmann` owner), MulmoTerminal (PR #12), Martty (issue #9, ~81★), Zozo (issue #17,
+  closed-source, site read).
+- **Held back from PRs/issues**: Kortix (PR #19 — builds its own agents on Pi; no external coding-agent
+  CLI in its README, out of scope), Layerbase Workspaces (PR #13 — hosted Ubuntu box with a session
+  list, no dispatch or orchestration; infrastructure), under ~50★: OpenCode Android (PR #16, 32),
+  Superagent (PR #11, 36), Sillage (PR #10, 11), PinkCollab (PR #14, 10), Kronos (PR #7, 4 and stale),
+  Conduit Bridge (issue #18, 0).
+- **Held back from discovery**: `NanmiCoder/cc-haha` (~15k, source-available; ships its own runtime
+  under `src/`, provenance unverified), `savannahfeder/agentbox` (name clash with listed
+  `madarco/agentbox`, same call as `mixpeek/amux`), `lanes-sh/app` (no source in repo),
+  `eliasstravik/shepherdr` (herdr plugin), `amplifthq/openmeld` (hosted collaboration, own agent).
+  Own agent / other category: `Gentleman-Programming/gentle-shell`, `omnirush-ai/omnirush-gui`,
+  `getkimchi/kimchi`, `yyjeqhc/webcodex` (MCP tool runtime).
+- **Search limit**: discovery covers repos created since March 2026 with ≥150★; the long tail between
+  ~50★ and ~250★ was only partly reviewed.
+
 ## Out of scope (recorded for reviewers)
 
 Goose, Hermes Desktop/Agent, OpenClaw (general assistants/agents); FleetQ (general DAG
