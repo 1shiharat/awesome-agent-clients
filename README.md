@@ -146,6 +146,8 @@ Agents and orchestrators that live inside your editor.
 
 Browser-first orchestrators you run locally or self-host.
 
+- [Kortix](https://kortix.com) [![★](https://img.shields.io/github/stars/kortix-ai/CompanyOS?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/kortix-ai/CompanyOS/stargazers) 🔓 — Open-source CompanyOS that runs each agent session on its own isolated cloud computer, with agents, skills, memory and connectors in one git repo you own. `Elastic-2.0` `Web/self-hosted/Cloud` `MCP` `multi-agent`
+
 - [Multica](https://multica.ai/) [![★](https://img.shields.io/github/stars/multica-ai/multica?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/multica-ai/multica/stargazers) 🟡 — Open-source managed-agents platform turning coding agents into board-tracked teammates you assign issues to. `Apache-2.0 (mod.)` `Web/self-hosted/Cloud` `12 agents`
 - [Vibe Kanban](https://www.vibekanban.com/) [![★](https://img.shields.io/github/stars/BloopAI/vibe-kanban?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/BloopAI/vibe-kanban/stargazers) 🔓 — Kanban interface to plan, run, and review tasks across many agent CLIs, each in an isolated worktree. `Apache-2.0` `mac/Web/CLI` `10 agents`
 - [T3 Code](https://t3.codes/) [![★](https://img.shields.io/github/stars/pingdotgg/t3code?style=flat-square&label=%E2%98%85&color=2ea043)](https://github.com/pingdotgg/t3code/stargazers) 🔓 — Open-source web/desktop control plane (Theo/Ping) orchestrating Codex, Claude Code, Cursor, and OpenCode. `MIT` `mac/Win/Linux/Web/CLI` `4 agents`
