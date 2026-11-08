@@ -299,6 +299,69 @@ All badged repos re-read through the GitHub GraphQL API; non-GitHub links re-fet
 - **Search limit**: discovery covers repos created since March 2026 with ≥150★; the long tail between
   ~50★ and ~250★ was only partly reviewed.
 
+## 2026-11-08 — description refresh
+
+The 2026-11-07 pass re-checked repos, licenses and stars but not what each tool now does, and many
+descriptions were still June–July wording (e.g. T3 Code listed as a 4-agent web control plane after
+it shipped desktop/mobile apps, per-thread worktrees, a terminal, a browser panel and a PR view).
+Every entry was re-read against its current README/LICENSE (closed-source: its site).
+
+- **Rewritten: 115 of 162 entries** (description, platforms, agent count, MCP/ACP tags), EN + JA.
+- **T3 Code** moved Web → Desktop & multi-platform (desktop, web, iOS and Android apps).
+- **Marker/license changes**: Paseo (Apache-2.0) and openwork (MIT outside `ee/`) 🟡→🔓; DS Harness
+  Remote (now MIT) 🟡→🔓; kanna (MIT text excluding named parties) 🔓→🟡; Agent Viewer (no LICENSE
+  file) → `no license` 🟡; Multica tagged `Apache-2.0 (mod.)`, source-available.
+- **Removed**: `h5i-dev/h5i` — pivoted to a Lean 4 Rust web framework.
+- **Moved to Archived**: automaker — its LICENSE now states it is no longer maintained.
+- **Archived notes updated**: Omnara (repo un-archived and now a different product: a managed agent
+  platform), opcode (commits resumed 2026-09/11, still no release since v0.2.0).
+- **Kept with a note, scope drifting**: Vibe Kanban (sunset by Bloop, community-maintained),
+  CodePilot (mostly its own general agent, Claude Code optional), BossConsole (built around its own
+  agent), Orkas (own agent team plus external CLIs), OpenSwarm (CI/CD gate, external CLIs optional),
+  Agency Orchestrator (role library, coding CLIs one backend). Revisit at the next pass.
+
+## 2026-11-08 — full re-curation (discovery + pruning)
+
+The 11-07 pass only searched repos created since 2026-03 with ≥150★ and pruned only gone/archived
+repos. This pass widened both sides.
+
+**Pruning rules (now in the Legend and CONTRIBUTING.md)**
+- No default-branch commit in the last 90 days → removed, or moved to Archived if ≥2,000★.
+  Archived: CodexMonitor, Aperant, toad, VibeTunnel, ralphy, Antfarm, claude-code.nvim (+ automaker).
+  Removed (18): opensessions, fox-ai-roundtable, recensa, OpenKanban, foreman, takopi,
+  claude-code-by-agents, FleetCode, Helmor, Agent Viewer, AgentPipe, codex-orchestrator, kanbots,
+  OpenGoat, Constellagent, Claude Code Plus, Aizen, multi-agent-shogun.
+- Curation bar raised ~50★ → ~100★ (exception: under ~3 months old and actively developed).
+  Removed: ultracodex, dux, jmux. Kept: Martty (created 2026-08, very active).
+- ⚠️ now means ≤3 default-branch commits in 90 days (was: 180 days without a commit).
+- Scope drift → Related › agents that double as apps: CodePilot, BossConsole, Orkas, OpenSwarm,
+  Agency Orchestrator (each now centred on its own agent).
+
+**Discovery**
+- GitHub: 126 searches (100 keyword queries over name/description/README + 25 topics), no
+  creation-date limit, ≥100★, pushed since 2026-08-10 → ~5,200 unlisted repos, keyword-filtered to
+  202 for review.
+- Web: two research agents (English: HN Show HN, Product Hunt, roundups, directories, other awesome
+  lists, closed-source products; CJK: Chinese/Japanese/Korean GitHub queries and community sites)
+  → 273 repo candidates + 23 closed-source products.
+- Every candidate's README was read (closed-source: site + independent coverage) and checked for
+  ≥100★, ≥4 commits since 2026-08-10, not fork/archived, standalone client of separate agents.
+- **Added 283 repos + 6 closed-source** (JetBrains Air, GitHub Agent HQ, Xcode, Twill, Replicas,
+  Zenflow). New Related block **First-party agent apps** (Codex app, Claude Code desktop, Cursor
+  Agents Window, Antigravity, Ona). Coding-agent line gained DeepSeek Harness, Grok Build,
+  Antigravity CLI, Qwen Code, Kimi Code.
+- **Rejected for distinctness/scope** (not exhaustive): DeepSeek Harness redistributions/launchers
+  that bundle the official web UI (anywhere-labs/dsh-desktop, dsh-tauri/deepseek-harness-desktop,
+  ningbainb, myYangyunfan, vibeinging, chokwinlee, MichengAI, yyh-001/DSH-X, MarcoG-h/DSH-Launcher,
+  cocode-agency/cocode) and on-phone redistributions (Soodok, dphmoblie); DSH plugins (dsh-pocket,
+  dsh-sev, dsh-web); API proxies/trace wrappers (claude-tap, cc-viewer); generic routers/assistants
+  (RabiRoute, Dodaios); installers/switchers (terminal-jarvis, cc-switch); worktree helpers
+  (agent-worktree); possibly discontinued or stale (herdrm, session-kit, hive). First-party agents
+  themselves (Kiro, Jules, Devin) left out. Per-candidate verdicts are in the pass's scratch files.
+- **Known limits**: the keyword filter on the 5,200-repo GitHub pool can miss tools whose
+  description doesn't name an agent; Reddit and X were not swept; star counts of some new CJK repos
+  rose very fast and were not audited for star inflation.
+
 ## Out of scope (recorded for reviewers)
 
 Goose, Hermes Desktop/Agent, OpenClaw (general assistants/agents); FleetQ (general DAG

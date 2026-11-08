@@ -31,8 +31,8 @@ not as primary entries):
 ### Quality bar
 
 We aim to be comprehensive but curated. As a rough adoption signal, projects with **fewer than
-~50 GitHub stars** are usually held back until they gain some traction — unless they do
-something genuinely novel. Recent activity and a working install path help. Entries carry a
+~100 GitHub stars** are usually held back until they gain some traction — unless they do
+something genuinely novel. Recent activity is required: tools with no commits in the last 90 days are removed or archived. Entries carry a
 live GitHub-stars badge and are sorted by star count within each section; the star count is a
 signal of adoption, not a judgment of quality.
 
