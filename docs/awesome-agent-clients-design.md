@@ -362,6 +362,46 @@ repos. This pass widened both sides.
   description doesn't name an agent; Reddit and X were not swept; star counts of some new CJK repos
   rose very fast and were not audited for star inflation.
 
+## 2026-11-17 refresh — second discovery + pruning pass
+
+Same rules as 11-08 (90-day activity, ~100★ bar, ⚠️ = ≤3 commits in 90 days). All entries re-audited
+via GraphQL (stars, archive/fork state, default-branch commits since 2026-08-19).
+
+- **Removed (no default-branch commit in 90 days, <2,000★)**: Bivor, WeChat ACP, dmux.
+- **Removed (scope)**: Martty, which now describes itself as a DeepSeek Harness plugin and is still under 100★.
+- **Renamed**: Cetus `drewnekota/cetus` → `william-jin-cmu/cetus`.
+- **⚠️ reset** to the 11 entries at ≤3 commits/90d: AgentHub (jamesrochabrun), Claude Squad,
+  Cline (Kanban), DevThrottle, Dorothy, MioIsland, OpenCovibe, Routa, claude-code-ide.el,
+  claude_code_agent_farm, lalph.
+- **Discovery**: resumable GitHub keyword/topic harvest plus web search; 92 candidates read against
+  their READMEs by verify agents. **Added 74**:
+  - Desktop (28): Ekko Studio, Cindy, bb, Clowder AI, Sheprd, Kero, openteams, Timon, Intent, Tucano,
+    Codex Bridge, Up.computer, Conduit, Pi GPUI, Gold Band, Threadbear, Antumi, Workbench, Ness, Mokusei,
+    touri, xMatrix, Friday, Codealong, Obeya, iCode Workbench, Unstoppable Code, BAND for Developers (closed source).
+  - Terminal (12): LoopX, Agent Autoloop, gnhf, tty7, Luvus, wmux (amirlehmam), tsk, numbrone, Imbo, troupe,
+    nsq (NeuroSquad), chord.
+  - IDE (1): FluxCode.
+  - Web (11): It's a Plan, agentes.chat, SoduWork, PandaDOS, Hive, Bosun, Harness Maxxing, wicked-studio,
+    PI WEB (Gang-of-Beads), Cocogem, AgentForeman.
+  - Cloud (3): AgentConnect, ABCA, pi pod.
+  - Mobile (7): Switch, Pi-Remote, Pairfob, cccodroid, OpenCode Mobile (beppe2880), pi-phone, pi-durable telegram.
+  - Session viewers (12): Kanzo, Obelisk, herdr-annotate, Capri, Bailong Desktop Pet, Irrlicht, ChatVault,
+    Rhizome, agent-board, Flockbook, Muster, Cubicle Crew.
+  - Entries under 100★ were all created after 2026-08-17 and have at least 30 commits, so they fall under the new-and-active exception.
+- **Related › adjacent tooling**: Worktrunk (git worktree CLI for parallel agent work, not an agent manager; listed under Related).
+- **Rejected**:
+  - claude-tap: an API proxy.
+  - Harp, Wu, GOAT: hard forks of Warp, Zed and T3 Code.
+  - herdrm: possibly discontinued. herdr-radar: in maintenance mode.
+  - RabiRoute, Dodaios: rejected before.
+  - Open Design, SOMA, Eleven: apps for a single domain (design, CAD, reverse engineering), not agent clients.
+  - Kun: its own agent runtime.
+  - Open Managed Agents: a managed-agent platform.
+  - Claudepot: built around account switching.
+  - agent-speed: a benchmark.
+  - session-migrate: a transcript converter.
+  - OpenMicro: a game-controller input device.
+
 ## Out of scope (recorded for reviewers)
 
 Goose, Hermes Desktop/Agent, OpenClaw (general assistants/agents); FleetQ (general DAG
