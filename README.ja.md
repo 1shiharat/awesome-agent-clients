@@ -194,6 +194,7 @@
 - [JetBrains Air](https://www.jetbrains.com/air/) 🔒 — JetBrains のエージェント開発環境。Claude Agent、Codex、Gemini CLI、Junie などの ACP エージェントを並べて動かし、タスクごとにローカル、worktree、Docker、クラウドで分離して実行する。`closed-source` `mac/IDE/Web/CLI` `ACP` `MCP` `6+ agents`
 - [Zenflow](https://zencoder.ai/zenflow) 🔒 — Zencoder のデスクトップアプリ。仕様駆動のワークフローで Claude Code、Codex、Gemini、Zencoder のエージェントを独立した worktree で動かし、別ベンダーのエージェントに出力をレビューさせられる。`closed-source` `Desktop` `MCP` `Claude Code/Codex/Gemini/Zencoder`
 - [BAND for Developers](https://band.ai/use-cases/band-desktop) 🔒 — ローカルや集中管理のコーディングエージェントがルームとコンテキストを共有して作業を引き継ぎ、担当・ブロッカー・質問・承認・エージェント別コストを表示する無料のデスクトップアプリと CLI。`closed-source` `mac/Win/Linux/CLI` `Claude Code/Codex/Copilot/OpenCode`
+- [Velion](https://heyvelion.velioncorp.com/en) 🔒 — テキストまたは音声による1つの依頼から、プロジェクトごとに Claude Code・Codex・OpenCode・Gentle-Shell のセッションを起動し、完了を通知し、権限や質問をリスクレベル付きの1つのパネルにまとめ、iPhone からセッションを確認・入力できる Mac / iPhone アプリ（クローズドベータ）。`closed-source` `mac/iOS` `Claude Code/Codex/OpenCode/Gentle-Shell`
 
 <a id="terminal"></a>
 ## ターミナル／CLI オーケストレーター

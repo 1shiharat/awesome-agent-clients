@@ -192,6 +192,7 @@ Native or Electron apps that run on the desktop, most with mobile/web companions
 - [JetBrains Air](https://www.jetbrains.com/air/) 🔒 — JetBrains' agentic development environment that runs Claude Agent, Codex, Gemini CLI, Junie, and other ACP agents side by side, each task isolated locally, in a worktree, in Docker, or in the cloud. `closed-source` `mac/IDE/Web/CLI` `ACP` `MCP` `6+ agents`
 - [Zenflow](https://zencoder.ai/zenflow) 🔒 — Zencoder's desktop app for spec-driven workflows that run Claude Code, Codex, Gemini, or Zencoder's agent in isolated worktrees, with one vendor's agent reviewing another's output. `closed-source` `Desktop` `MCP` `Claude Code/Codex/Gemini/Zencoder`
 - [BAND for Developers](https://band.ai/use-cases/band-desktop) 🔒 — Free desktop app and CLI where local and managed coding agents share rooms and context, hand off work, and show ownership, blockers, questions, approvals and per-agent cost. `closed-source` `mac/Win/Linux/CLI` `Claude Code/Codex/Copilot/OpenCode`
+- [Velion](https://heyvelion.velioncorp.com/en) 🔒 — Mac and iPhone app that starts one Claude Code, Codex, OpenCode or Gentle-Shell session per project from a single typed or spoken request, alerts when an agent finishes, gathers permissions and questions in one panel with risk levels, and lets you follow and write to sessions from the iPhone; in closed beta. `closed-source` `mac/iOS` `Claude Code/Codex/OpenCode/Gentle-Shell`
 
 ## Terminal & CLI orchestrators
 
