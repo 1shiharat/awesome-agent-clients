@@ -402,6 +402,58 @@ via GraphQL (stars, archive/fork state, default-branch commits since 2026-08-19)
   - session-migrate: a transcript converter.
   - OpenMicro: a game-controller input device.
 
+## 2026-11-21 refresh — four-day delta
+
+Same rules as 11-08/11-17. Audit window for activity and ⚠️: default-branch commits since 2026-08-23.
+
+- **Removed (repo deleted, 404)**: proliferate, DevThrottle.
+- **Removed (no default-branch commit in 90 days, <2,000★)**: AgentHub (jamesrochabrun), Clarc, Pilot Harness, open-tag.
+- **Renamed**:
+  - Mokusei → Chief (`hupao-creator/Chief`); its description was refreshed.
+  - Claude Code History Viewer → Omnilogue (`jhlee0409/omnilogue`).
+  - Lody iOS repo moved to `LodyAI/lody-ios`.
+- **Updated**:
+  - Conductor: Meta acquired it in early November 2026. Conductor Cloud went read-only on Nov 13 and shut down on Nov 20, and from early 2027 the Mac app gets no new models or critical fixes. Sources are news reports quoting the CEO's post, such as The Register on 2026-11-05.
+  - Frink: frink.dev returns 402, so the entry links to the GitHub repo.
+- **⚠️ reset** to the 13 entries with ≤3 commits in 90 days. Newly flagged: Agent Control Center, Agyn, Claude Control, DSH Remote Web Gateway, Nexting. Cleared: claude-code-ide.el.
+- **Discovery**:
+  - GitHub search: 75 keyword and topic queries returned 1,757 repos. A filter on description keywords, earlier rejections and activity left 69 to check.
+  - Web search: Show HN, andyrewlee/awesome-agent-orchestrators and other awesome lists gave 124 more candidates.
+  - Verify agents read the README of every candidate that passed the bar: ≥100★ with >3 commits in 90 days, or created after 2026-08-21 with ≥50★ and ≥30 commits.
+- **Added 46**:
+  - Desktop (17): ThinkTerm, EnsoCode, Helicon, Farcaster, Termilly, Munder Difflin, Beluga, TOKENICODE,
+    TaroBird, Agentaps, Kybern, Prometeu, Muxflow (PR #27), CodeDen, Claude Web, Novadeck, Herdr app.
+  - Terminal (5): Axel, broco, ELU, Overseer, pi-cowboy.
+  - IDE (1): opencode.nvim (sudo-tee).
+  - Web (4): Herdr World, Chief of Staff, Pi Dash, vibepanel.
+  - Cloud (1): monoid.
+  - Mobile (9): OpenCode Mobile (Eslamasabry), BrewPing, Mobile Codex, RexPocket, Doriterm, Termish, Horus,
+    Telegram Agents for Herdr, OpenCode Android (Dajeovv, PR #16).
+  - Session viewers (9): Code-Codex, Agent Notifications, Claude Code Filetree, claude-share, Project Sentinel,
+    Möbius, whatsmyagentdoing, dotpals, AgentMon Live.
+- **Rejected**:
+  - Built around their own agent: eigent, nautilo, orbs.
+  - Not a client:
+    - buddy-android: a phone-automation assistant.
+    - claude-show-your-work: renders the agent's output.
+    - better-harness: a skill pack.
+    - cc-remote: an ACP adapter.
+  - Forks or derivatives of listed tools:
+    - agent-duel: a hard fork of Paseo.
+    - planrelay: Plannotator with its history copied in.
+    - Dev-Labs: a fork of Munder Difflin.
+  - First-party and not yet public: anomalyco/opencode-android (internal Play testing, no license).
+  - herdr-core: covered by the herdr entry.
+  - Previously rejected: Dodaios.
+  - Closed-source tools found only through Show HN or Product Hunt, with no traction signal yet, were deferred. These include Thrum, CodeConnect, Halyard, Clawdline, Cosyra, Skep and the Mac notch apps.
+- **Community submissions on hold** for the ~100★ bar or until public release:
+  - Anywhere (PR #29, 19★)
+  - Velion (PR #26, closed beta)
+  - Open Agent API (#28)
+  - Conduit Bridge (#18)
+  - Mons (#23)
+  - Kronos, Sillage, Superagent, PinkCollab, Layerbase, Kortix (earlier PRs)
+
 ## Out of scope (recorded for reviewers)
 
 Goose, Hermes Desktop/Agent, OpenClaw (general assistants/agents); FleetQ (general DAG
