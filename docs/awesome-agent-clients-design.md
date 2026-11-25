@@ -368,7 +368,7 @@ Same rules as 11-08 (90-day activity, ~100★ bar, ⚠️ = ≤3 commits in 90 d
 via GraphQL (stars, archive/fork state, default-branch commits since 2026-08-19).
 
 - **Removed (no default-branch commit in 90 days, <2,000★)**: Bivor, WeChat ACP, dmux.
-- **Removed (scope)**: Martty, which now describes itself as a DeepSeek Harness plugin and is still under 100★.
+- **Removed (scope)**: Martty (under 100★). Reason written down afterwards, not at removal time; checked 2026-11-25: its README calls it a DSH-first TUI that can also connect to other ACP agents.
 - **Renamed**: Cetus `drewnekota/cetus` → `william-jin-cmu/cetus`.
 - **⚠️ reset** to the 11 entries at ≤3 commits/90d: AgentHub (jamesrochabrun), Claude Squad,
   Cline (Kanban), DevThrottle, Dorothy, MioIsland, OpenCovibe, Routa, claude-code-ide.el,
@@ -389,7 +389,7 @@ via GraphQL (stars, archive/fork state, default-branch commits since 2026-08-19)
     Rhizome, agent-board, Flockbook, Muster, Cubicle Crew.
   - Entries under 100★ were all created after 2026-08-17 and have at least 30 commits, so they fall under the new-and-active exception.
 - **Related › adjacent tooling**: Worktrunk (git worktree CLI for parallel agent work, not an agent manager; listed under Related).
-- **Rejected**:
+- **Rejected** (partial list: only candidates dropped after a positive README check are recorded here):
   - claude-tap: an API proxy.
   - Harp, Wu, GOAT: hard forks of Warp, Zed and T3 Code.
   - herdrm: possibly discontinued. herdr-radar: in maintenance mode.
@@ -398,7 +398,7 @@ via GraphQL (stars, archive/fork state, default-branch commits since 2026-08-19)
   - Kun: its own agent runtime.
   - Open Managed Agents: a managed-agent platform.
   - Claudepot: built around account switching.
-  - agent-speed: a benchmark.
+  - agent-speed: a token-speed and cost gauge (corrected 2026-11-25; first recorded as a benchmark without being checked).
   - session-migrate: a transcript converter.
   - OpenMicro: a game-controller input device.
 
@@ -413,13 +413,13 @@ Same rules as 11-08/11-17. Audit window for activity and ⚠️: default-branch 
   - Claude Code History Viewer → Omnilogue (`jhlee0409/omnilogue`).
   - Lody iOS repo moved to `LodyAI/lody-ios`.
 - **Updated**:
-  - Conductor: Meta acquired it in early November 2026. Conductor Cloud went read-only on Nov 13 and shut down on Nov 20, and from early 2027 the Mac app gets no new models or critical fixes. Sources are news reports quoting the CEO's post, such as The Register on 2026-11-05.
+  - Conductor: recorded as shutting down, from news reports only. **Wrong when published:** Conductor's 0.94.2 changelog (2026-11-13) had already reversed the shutdown. Corrected 2026-11-25.
   - Frink: frink.dev returns 402, so the entry links to the GitHub repo.
 - **⚠️ reset** to the 13 entries with ≤3 commits in 90 days. Newly flagged: Agent Control Center, Agyn, Claude Control, DSH Remote Web Gateway, Nexting. Cleared: claude-code-ide.el.
 - **Discovery**:
-  - GitHub search: 75 keyword and topic queries returned 1,757 repos. A filter on description keywords, earlier rejections and activity left 69 to check.
+  - GitHub search: 75 keyword and topic queries returned 1,757 repos. A regex filter, which also dropped any description containing words such as "model" or "usage", left 234; about 65 of those were picked by eye from truncated descriptions, and community submissions were added. (Corrected 2026-11-25; first recorded as a filter leaving 69.)
   - Web search: Show HN, andyrewlee/awesome-agent-orchestrators and other awesome lists gave 124 more candidates.
-  - Verify agents read the README of every candidate that passed the bar: ≥100★ with >3 commits in 90 days, or created after 2026-08-21 with ≥50★ and ≥30 commits.
+  - Verify agents read the README of every candidate that passed the bar: ≥100★ with >3 commits in 90 days (this commit floor was not a list rule and is dropped from 2026-11-25), or created after 2026-08-21 with ≥50★ and ≥30 commits.
 - **Added 46**:
   - Desktop (17): ThinkTerm, EnsoCode, Helicon, Farcaster, Termilly, Munder Difflin, Beluga, TOKENICODE,
     TaroBird, Agentaps, Kybern, Prometeu, Muxflow (PR #27), CodeDen, Claude Web, Novadeck, Herdr app.
@@ -453,6 +453,35 @@ Same rules as 11-08/11-17. Audit window for activity and ⚠️: default-branch 
   - Conduit Bridge (#18)
   - Mons (#23)
   - Kronos, Sillage, Superagent, PinkCollab, Layerbase, Kortix (earlier PRs)
+
+## 2026-11-25 refresh — wider search, corrections
+
+Rules unchanged. Activity window: default-branch commits since 2026-08-27.
+
+- **Corrections to earlier passes**: Conductor (above), the 11-17 and 11-21 notes (above), and golutra and agent-launcher, which 11-21 skipped under a commit floor that is not a list rule.
+- **Removed**: OpenCovibe (no default-branch commit in 90 days, <2,000★).
+- **⚠️ newly flagged among existing entries**: Akari, babysitter, OpenCode Chat Bridge. Added with ⚠️: ATM (Agent Team Manager), Canopy, Claude Trace Replay, Codbash, Continuous Claude, Kibitz, Manaflow, My Virtual Office, ORCH, Ralph Loop (PageAI), SuperHQ, Vibe Island, Zacp, ccboard, claude-duet, golutra, hatice, lark-channel-bridge, sidekick.nvim, tgterm.
+- **Updated from vendor pages**: Conductor, JetBrains Air (also inside JetBrains IDEs from 2026.3), Yume (paid, free demo), Codex app (Linux), Claude Code desktop (Linux beta).
+- **Discovery**: 164 GitHub queries, split by star range so none was truncated: 8,013 repos, 7,559 unlisted including web finds and submissions. 6,727 met the bar (≥100★ with at least one commit in 90 days, or created since 2026-08-25 with ≥50★ and ≥30 commits).
+  1. A keep-only keyword filter (agent term and client term) left 4,263; 60 of the 2,464 dropped were sampled, with no clear client among them and about 4 undecidable from the description.
+  2. Agents read all 4,263 descriptions (cut at about 190 characters): 1,051 kept. 63 share a name with something in this document and skipped step 3.
+  3. Agents read README openings for 988: 225 core, 525 edge, 238 out.
+  4. Agents checked 293 (the 225, the 63, and re-checks/submissions): 211 add, 49 edge, 33 reject. Long READMEs were read in part; nothing was installed or run.
+- **Added 200**:
+  - Desktop (69): Cate, Goodboy, CLI-Manager, Pi Agent Desktop (DLYZZT), Coffee CLI, Open Space, Motive, golutra, OpenPi, Frame, Lanes, Orgtree, myco, 20x, Reviu, Agentbox (savannahfeder), Claude Overlay, AgentKib, Dash, OMP Studio, Pi-Harness, FanBox, Paneflow, Deskfolk, Gui, ATM (Agent Team Manager), Tessera, kooky, Agents Pixel Dungeon, Otto, Dray, Ouijit, Void, GraphCode, TUICommander, Vibex, Mr. Mak Workspace, Panes, Flare, Grix, AgentCraft, Coppice, Jaz, ThinkRail, Canopy, Kettu, FreeBuddy, Ordinus, ORG2, chartr, Kuvo Code, Ship Studio, PiCove, SuperHQ, Jarvis × Codex, PlanWeave, Troupe (gnoviawan), MyAgents, Joxo, Sable, Mycelium, RepoPrompt CE, Agent Network, Bloom, Termdock, Tutti, Noddit, fx-ui, AgentsDock.
+  - Terminal (25): Pebrel, fractal, cockpit, Claude Code Rust, Overtime, Ralph Orchestrator, herdr-board, oat-agents, Sortie, Unpeel, Continuous Claude, multi-agents, iloom, claudectl, Chief (MiniCodeMonkey), hatice, Looper, ORCH, tmux-agent-status, Squadra, claude-duet, Convoy, baro, Sidecar, Ralph Loop (PageAI).
+  - IDE (7): pi-nvim (carderne), Claude Sidebar, Agent Deck (MatsuriMW), sidekick.nvim, Kibitz, Pixel Agents, Claudian.
+  - Web (36): CCC (Claude Command Center), Wallfacer, JSM HQ, Sugar, CC-Viewer, SafeClaw, Caw, Chorus, Shepherdr, JARVIS, Firetower, Glowbom OSS, herdr-web, Tabminal, CLI-JAW, amux (mixpeek), PiClaw, Shep, Pithagoras, SuperHive, Agent Office, Agent Swarm, My Virtual Office, Zacp, MADRE, Yep Anywhere, cubefarm, ompweb, Pullboard, pi-web (ygncode), Agent Tower, agentbox (devilcoolyue), CAR (codex-autorunner), PlainBoard, LoopTroop, Myrlin Workbook.
+  - Cloud (4): OpenMeld, Manaflow, Mikka, Maity.
+  - Mobile (26): tgterm, Antigravity Mobile, PocketShell, OC Remote, Zedra, Kiteline, OpenLens, lark-channel-bridge, TelePi, Antigravity Telegram Suite, OpenCode iOS Client, Herdr Anywhere, Pulsar, Herdr Mobile Relay, herdr-remote, Mimi Remote, Remux, Whip, Riffpad, herdrup, OpenCode Mobile (alvarolorentedev), Hermes Control, Shed, Remote Pi, Porta, Feishu Codex Bridge.
+  - Session viewers (33): Poirot, AgentLogs, Herdr HUD, Agent Quest, Sessions Viewer, agent-trace (Siddhant-K-code), Vibe Island, Trajex, Claude Trace Replay, lazyagent, Codex Mate, claude-view, Argus, CC Sessions, Claude Code Log, Ping Island, Opaline, ccboard, AgentHist, cctop (st0012), Codbash, ClawMetry, OpenSync, Codex Local Session Manager, Cubicle, Claude Code Trace, Rounds, agentacct, ccrider, bough, Recall, AgentBro, Memory Forge RS.
+- **Where the 200 come from**: none was created after 2026-11-20; 158 predate 2026-08-25 and 42 were created 2026-08-25 to 11-20, so this is mostly a backlog earlier searches missed. Stars at harvest: ≥1,000 24, 500–999 18, 200–499 59, 100–199 81, 50–99 18 (new-and-active exception).
+- **Earlier calls reversed (13)**: grown past the bar or only a star deferral (caw, claude-command-center, ORCH, sortie, ouijit, LoopTroop); only a name clash (mixpeek/amux, savannahfeder/agentbox); Ralph-loop family (ralph-orchestrator); product changed or re-read (cate, openmeld, shepherdr); closed product with a releases-only repo, now 🔒 (lanes-sh/app).
+- **Held, 11**: low outside participation relative to stars, which the star bar cannot judge: CKang-J/Kith-space, CrommaAI/crommacode, HangYu8123/Pocket-Agent-CLI, JerryZLiu/AgentPlayback, cdervis/Pendant, duckbugio/flock, hoangperry/herminal, hogancv/coordinate-agents, jarvislee90s-dot/tuvis, spaceamoeba-t/tapq, talgent-work/workbench. Stargazer histories were not available, so this is a caution, not a finding.
+- **Edge after the full check (49), not listed**: emo-xiaoyu/harness-mix, ethanhq/cc-fleet, github/squad, icesixgod/codex-trajectory, joexk1/JoeBro, KIvanow/sessionly, LumaryLabsLLC/muxin, mikessslxxx/anti-power, modimihir07/agentic-os, nekocode/agent-worktree, nidhi-singh02/agent-router, openma-ai/open-managed-agents, OtoDock/oto-dock, slopus/happy-desktop, tidydesigns/tidy, xiaotonng/pikiloom, zoefix/agent-speed, Dodaios/Dodaios, GaganSD/coding-agent-toolkit, Invariant0x/hornhoof, jayminwest/warren, KunAgent/Kun, openyak/openyak, Rich627/whatsapp-claude-plugin, stephenleo/OpenMicro, Zfinix/eleven, ghorbelhamdi/buddy-android, iamumeransari/claude-show-your-work, iOfficeAI/AionUi, jefferysha0627/agent-office-3d, NanmiCoder/cc-haha, piperhex/remoteai, tugcantopaloglu/openclaw-dashboard, 721AndrewWang/VibeCrew, anomalyco/opencode-android, coder/xum, FankChen/tracecrate, herdrdev/herdr-core, k1p1l0/claude-telegram-supercharged, MatthewZMD/aidermacs, missuo/herdrm, opencraft-app/opencraft, Orkas-AI/Orkas, risa-labs-inc/BossConsole, sevensir888/codex-command-center, svaraborut/work3, vb2250158/RabiRoute, wusterbuilds/habitat-cli, xiaolai/claudepot-app. The 525 edge repos from step 3 were not checked further.
+- **Rejected after the full check**: breezewish/CodexPotter (Now ships only Codex skills and an npm install wizard; skill pack); huanchong-99/SoloDawn (Licence states it is a derivative of Vibe Kanban (listed) and CC-Switch); ineedfoundmyway/planrelay (Self-declared Plannotator derivative with copied commit history; no forks or releases); liaohch3/claude-tap (API traffic proxy and trace viewer; previous verdict still holds); MisterBowie/omp-desktop (README says the app is derived from PI-Desktop (vastsa, listed)); olsenbrands/fable-foreman (Claude Code skill pack, not a client); abcwyc/pi-agent-desktop (Self-described fork of agegr/pi-web (listed as Pi Web) that merges its releases; LICENSE is agegr); agentsea/nautilo (Multi-user assistant platform with its own agent, server and creative apps; does not run external coding agents); cathrynlavery/codex-build (Skill/plugin of Markdown and scripts that has Claude Code call codex exec; no client); farion1231/cc-switch (Provider/config switcher for agent CLIs, not a runner; earlier judgement still holds); Gentleman-Programming/gentle-shell (Coding agent itself: distribution of earendil-works/pi carrying its git history and licence); hhdebb/herdr-radar (Fork of qintmb/herdr-icon-agent-ui; Herdr sidebar plugin in declared maintenance mode); komla-dev/komla (Inflated: all 71 forks on one day from zero-follower accounts; sampled five created within 30 minutes); mathomhaus/guild (MCP server for shared memory and task claims; does not launch or display agents); Nanako0129/pilotfish (Claude Code policy plugin: subagent roles and prompts, no client; earlier judgement holds); omnirush-ai/omnirush-gui (Fork of different-ai/openwork (listed): LICENSE is Different AI; requires own account and models); piai-lab/Haros (source-adoptions.json: downstream distribution of Emanuele-web04/synara (listed); no commits since 22 September); simple10/agents-observe (Detached fork: git history continues disler/claude-code-hooks-multi-agent-observability, rewritten since; README says only inspired); agent-launch/agent-launcher (Suspicious: 259 stars with 1 fork, 0 watchers, 3 commits, 153 downloads, one-repo organisation); bushm2092-del/agent-weave (Suspicious: 188 stars, 2 forks, 0 watchers, new owner account; no licence, no releases, quiet since 2026-09-03); dozybot001/Intent (Records Git-linked intent history, not an agent client; 316 stars with 0 forks and 0 watchers); Hoylon/peerbridge-mcp (Suspicious: 239 stars, 2 forks, 0 watchers, 22 downloads, new zero-follower owner; quiet since 2026-09-02); oil-oil/codex (Agent skill with wrapper scripts that call the Codex CLI; not a client); talmetis-labs/aizen (It is a coding agent itself, not a client for external agents); wso2/agent-manager (Generic enterprise Kubernetes platform for deploying agents; does not drive coding-agent CLIs); xhluca/session-migrate (Transcript format converter only; no session viewing or agent control); yyjeqhc/webcodex (MCP tool runtime giving cloud AI clients shell and repository access; does not drive coding agents); AkaraChen/cc-remote (ACP agent adapter that runs Claude Code over SSH for other clients; not a client itself, and no licence); bottomless/agent-duel (README states it is a fork of Paseo (plus vendored OpenCode fork)); Esterfourth/kosmos-agent-platform (Suspicious: six files, no code, hourly workflow fakes commits, README funnels to a download page); jeffreycayao/Dev-Labs (README states it is a fork of Munder Difflin); QoderAI/better-harness (Analysis skill and plugin run inside coding agents to report on workflow; not a client); stagewise-io/stagewise (Agentic IDE with its own built-in coding agent; no external agents managed).
+- **Submissions**: MyAgents (#32) added. Held under the star bar or not yet public: lucid (#31), herdr-insights (#33; a usage view in a Pi-extension monorepo), Excellent for Mac (#34; closed, unverified), agy-remote-wecom (#35), and the earlier holds.
+- **Not covered**: Reddit (refuses access). X and Product Hunt only in part. 42 web candidates without a repository were not verified.
 
 ## Out of scope (recorded for reviewers)
 
